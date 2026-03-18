@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honey Len Rogon - Virtual Assistant Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset & Base */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Roboto', sans-serif; background-color: #0f111a; color: #e0e0e0; line-height: 1.6; }
+    a { text-decoration: none; }
+
+    header {
+      background: linear-gradient(90deg, #4caf50, #00bfa5);
+      padding: 50px 20px;
+      text-align: center;
+      color: #fff;
+    }
+    header h1 { font-size: 3em; margin-bottom: 10px; }
+    header p { font-size: 1.3em; }
+
+    section { max-width: 1000px; margin: auto; padding: 40px 20px; }
+    h2 { color: #4caf50; margin-bottom: 20px; margin-top: 40px; border-bottom: 2px solid #4caf50; display: inline-block; padding-bottom: 5px; }
+
+    /* Profile Card */
+    .profile-card {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      background-color: #1b1d2a;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+      gap: 25px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .profile-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.7);
+    }
+    .profile-card img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 4px solid #4caf50;
+      object-fit: cover;
+    }
+    .profile-card p { font-size: 1.1em; flex: 1; min-width: 200px; }
+
+    /* Skills & Tools */
+    ul { margin-left: 20px; list-style-type: disc; }
+    li { margin-bottom: 10px; }
+
+    /* Sample Works */
+    .sample-works {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 25px;
+    }
+    .work-card {
+      background-color: #1b1d2a;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .work-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.6);
+    }
+    /* Framed Image Effect */
+  .work-card img {
+  width: 100%;
+  height: 200px; /* Fixed height for all images */
+  object-fit: cover; /* Ensures the image fills the container and crops excess */
+  border: 6px solid #4caf50; /* Frame color */
+  border-radius: 8px;
+  padding: 4px; /* Space between image and border */
+  background-color: #1b1d2a; /* Inner frame background */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+
+    }
+    .work-card .content { padding: 15px; }
+    .work-card .content h3 { color: #4caf50; margin-bottom: 12px; }
+    .work-card .content a {
+      text-decoration: none;
+      color: #0f111a;
+      background-color: #4caf50;
+      padding: 8px 16px;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 8px;
+      transition: background-color 0.3s ease;
+    }
+    .work-card .content a:hover { background-color: #00bfa5; }
+
+    /* Contact */
+    .contact a { color: #4caf50; }
+    .contact a:hover { text-decoration: underline; }
+
+    /* Download Resume Button */
+    .download-btn {
+      display: inline-block;
+      background-color: #4caf50;
+      color: #0f111a;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-top: 15px;
+      transition: background-color 0.3s ease;
+    }
+    .download-btn:hover { background-color: #00bfa5; }
+
+    /* Footer */
+    footer { text-align: center; padding: 20px 0; background-color: #0f111a; color: #888; margin-top: 50px; }
+
+    /* Responsive */
+    @media(max-width:600px){
+      .profile-card { flex-direction: column; text-align: center; }
+      .profile-card p { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Honey Len Rogon</h1>
+  <p>Aspiring Virtual Assistant | Data Management | Administrative Support</p>
+</header>
+
+<section>
+  <!-- Profile -->
+  <h2>Profile</h2>
+  <div class="profile-card">
+    <img src="profile-picture.jpeg" alt="Honey Len Rogon">
+    <p>
+      Hi! I'm Honey, an aspiring Virtual Assistant with a background in Information Technology. 
+      I help entrepreneurs, small business owners, and busy professionals manage their tasks efficiently. 
+      I am detail-oriented, reliable, and committed to learning new tools and technologies to provide effective support.
+    </p>
+  </div>
+
+  <!-- Skills -->
+  <h2>Skills</h2>
+  <ul>
+    <li>Design & Content: Creating visuals, presentations, and organized materials</li>
+    <li>Project Management: Organizing tasks, tracking progress, and collaborating</li>
+    <li>Productivity & Administration: Managing documents and daily administrative tasks</li>
+    <li>Communication: Effectively collaborating with teams via email, chat, and video</li>
+    <li>Client & Data Management: Organizing, tracking, and maintaining client information</li>
+    <li>Additional Skills: Data Entry, Email & Calendar Management, Document Organization, Attention to Detail</li>
+  </ul>
+
+  <!-- Tools -->
+  <h2>Tools & Technologies</h2>
+  <ul>
+    <li>Microsoft Word</li>
+    <li>Microsoft Excel</li>
+    <li>Google Docs</li>
+    <li>Google Sheets</li>
+    <li>Google Drive</li>
+    <li>Canva</li>
+    <li>Gmail</li>
+  </ul>
+
+  <!-- Sample Works -->
+  <h2>Sample Works</h2>
+  <div class="sample-works">
+    <div class="work-card">
+      <img src="Clean Coffee Day Instagram Post.png" alt="Social Media Post">
+      <div class="content">
+        <h3>Social Media Post</h3>
+        <a href="https://drive.google.com/file/d/1zAITdugJholhIOoVIkI0m_UlCYcPwjl5/view?usp=sharing" target="_blank">View Full File</a>
+      </div>
+    </div>
+    <div class="work-card">
+      <img src="TASK TRACKER.png" alt="Task Tracker">
+      <div class="content">
+        <h3>Task Tracker</h3>
+        <a href="https://docs.google.com/spreadsheets/d/1bkfQxTRtYMo9LHIBAXrQqm6vB2vFgLj3/edit?usp=sharing&ouid=105259012267459021371&rtpof=true&sd=true" target="_blank">View Full File</a>
+      </div>
+    </div>
+    <div class="work-card">
+      <img src="CONTENT CALENDAR.png" alt="Content Calendar">
+      <div class="content">
+        <h3>Content Calendar</h3>
+        <a href="https://docs.google.com/spreadsheets/d/1q_3GtWC1X7gCapXS7iqXilpwL9SJrPih/edit?usp=sharing&ouid=105259012267459021371&rtpof=true&sd=true" target="_blank">View Full File</a>
+      </div>
+    </div>
+    <div class="work-card">
+      <img src="EMAIL.png" alt="Email Organization">
+      <div class="content">
+        <h3>Email Organization</h3>
+        <a href="https://docs.google.com/document/d/1JfZrymgQdYZQHfyI0dhnSD5Y-f_Gy3WP/edit?usp=sharing&ouid=105259012267459021371&rtpof=true&sd=true" target="_blank">View Full File</a>
+      </div>
+    </div>
+    <div class="work-card">
+      <img src="data entry.png" alt="Data Entry">
+      <div class="content">
+        <h3>Data Entry</h3>
+        <a href="https://docs.google.com/spreadsheets/d/1Fr4k0TLM-KZVl7x0hrYIyhAie9S2S_Zl/edit?usp=sharing&ouid=105259012267459021371&rtpof=true&sd=true" target="_blank">View Full File</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <h2>Contact</h2>
+  <div class="contact">
+    <p>Email: <a href="mailto:honeylenruadorogon3@gmail.com">honeylenruadorogon3@gmail.com</a></p>
+    <p>Phone: +63 905 566 4587</p>
+    <p>Location: Occidental Mindoro, Philippines</p>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 Honey Len Rogon | Virtual Assistant Portfolio
+</footer>
+</body>
+</html>
